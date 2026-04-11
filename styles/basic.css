@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F7FA;
+    margin: 0;
+}
+
+.container {
+    padding: 0 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,p {
+    margin: 0;
+}
+
+
+
