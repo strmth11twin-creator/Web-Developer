@@ -1,0 +1,76 @@
+.wrapper-about {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.about-content {
+    font-size: 26px;
+}
+
+.skills-wrapper {
+    flex-wrap: wrap;
+    margin: 15px 0 0 0;
+    display: flex;
+    gap: 50px;
+}
+
+.skill {
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.css {
+    background-color: #1f6479;
+}
+
+.html {
+    background-color: #7e4320;
+}
+
+.js {
+    background-color: #9aa53b;
+}
+
+.php {
+    background-color: #681d1d;
+}
+
+.flutter {
+    background-color: #4e2a7c;
+}
+
+.sql {
+    background-color: #1e635f;
+}
+
+.python {
+    background-color: #0c5030;
+}
+
+@media (max-width: 768px) {
+    .skill {
+            border-radius: 5px;
+            padding: 0 10px;
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+        }
+    .skills-wrapper {
+            flex-wrap: wrap;
+            margin: 15px 0 0 0;
+            display: flex;
+            gap: 20px;
+        }
+}
