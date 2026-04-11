@@ -13,8 +13,13 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, p {
+h1, h2, h3, p, hr {
     margin: 0;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
 }
 
 .line {
