@@ -1,6 +1,11 @@
-.wrapper-about {
-    background-color: #fff;
+.about {
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    background-color: #fff;
+}
+
+.wrapper-about {
     display: flex;
     flex-direction: column;
     gap: 7px;
