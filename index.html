@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Web-Developer.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,7 @@
                     <p class="content">
                         Привет! Я обучаю ИТ и создаю веб-приложения Добро пожаловать на мое портфолио
                     </p>
-                    <button class="btn">Смотреть Проекты</button>
+                  <a href="#projects" class="btn" data-btn>Смотреть Проекты</a>
                 </div>
             </div>
         </section>
@@ -52,7 +53,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container">
                 <h2 class="projects-title">Мои Проекты</h2>
                 <div class="projects-container">
@@ -64,8 +65,9 @@
                             <p class="projects-card--text">Система онлайн-тестов и экзаменов</p>
                             <hr class="line">
                             <div class="projects-content">
-                                <img src="https://img.freepik.com/premium-photo/checkbox-check-mark-3d-illustration_118019-6919.jpg?semt=ais_hybrid&w=740" class="projects-image" alt="">
-                                    <p class="projects-content--text">HTML, CSS, SQL</p>
+                                <img src="https://img.freepik.com/premium-photo/checkbox-check-mark-3d-illustration_118019-6919.jpg?semt=ais_hybrid&w=740"
+                                    class="projects-image" alt="">
+                                <p class="projects-content--text">HTML, CSS, SQL</p>
                             </div>
                             <hr class="line">
                             <button class="projects-btn"><a href="https://github.com/strmth11twin-creator/Web-Developer"
@@ -80,34 +82,80 @@
                             <p class="projects-card--text">Гермефицированный список задач для заданий</p>
                             <hr class="line">
                             <div class="projects-content">
-                                <img src="https://static.vecteezy.com/system/resources/previews/021/040/389/non_2x/to-do-list-icon-vector.jpg" class="projects-image" alt="">
-                                    <p class="projects-content--text">Flutter, Firebase</p>
+                                <img src="https://static.vecteezy.com/system/resources/previews/021/040/389/non_2x/to-do-list-icon-vector.jpg"
+                                    class="projects-image" alt="">
+                                <p class="projects-content--text">Flutter, Firebase</p>
                             </div>
                             <hr class="line">
-                            <button class="projects-btn"><a href="https://chromewebstore.google.com/detail/todo-tracker/janilffnfjijnlakfjpaopbpadomhboh?pli=1"
+                            <button class="projects-btn"><a
+                                    href="https://chromewebstore.google.com/detail/todo-tracker/janilffnfjijnlakfjpaopbpadomhboh?pli=1"
                                     target="_blank">Demo</a></button>
                         </div>
                     </div>
                     <div class="projects-card">
-                        <img src="https://avatars.mds.yandex.net/i?id=1d3424a5502c24890340071905eeffa44681e0ce-5232503-images-thumbs&n=13"
-                            alt="testring platform" class="projects-card--image">
+                        <img src="https://a.d-cd.net/vsli70UjZeSLiC4nsgOEHCLSnRo-960.jpg" alt="testring platform"
+                            class="projects-card--image">
                         <div class="projects-card--wrapper">
                             <h3 class="projects-card--title">Телеграм-боты</h3>
                             <p class="projects-card--text">Автоматизация задач в месенджере</p>
                             <hr class="line">
                             <div class="projects-content">
-                                <img src="https://propuskator.com/wp-content/uploads/2021/06/upravlenie-ustrojstvami-2smart-cloud-s-pomoshhyu-telegram-bota.png" class="projects-image" alt="">
-                                    <p class="projects-content--text">Python, Api</p>
+                                <img src="https://propuskator.com/wp-content/uploads/2021/06/upravlenie-ustrojstvami-2smart-cloud-s-pomoshhyu-telegram-bota.png"
+                                    class="projects-image" alt="">
+                                <p class="projects-content--text">Python, Api</p>
                             </div>
                             <hr class="line">
-                            <button class="projects-btn"><a href="https://kallertech.com/?etext=2202.QUkaIL6prYQfYjbPzKxFR3Unuw5aMutt661zqUy2O31ndnpzdG1rZ3l3d3Fhc21y.bef9375514f0df03bc0ad49bec4f91f3674b38a3&yclid=8735388588178669567&ybaip=1"
+                            <button class="projects-btn"><a
+                                    href="https://kallertech.com/?etext=2202.QUkaIL6prYQfYjbPzKxFR3Unuw5aMutt661zqUy2O31ndnpzdG1rZ3l3d3Fhc21y.bef9375514f0df03bc0ad49bec4f91f3674b38a3&yclid=8735388588178669567&ybaip=1"
                                     target="_blank">Поподробнее</a></button>
                         </div>
-                </div>
-                
+                    </div>
+
                 </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="contacts-container">
+                <h2 class="contacts-title">Контакты</h2>
+                <div class="contacts-wrapper">
+                    <div class="contacts-wrapper--content">
+                        <img src="https://avatars.mds.yandex.net/i?id=3479bab667b1d0e802e16566718d35a502875c46-5221733-images-thumbs&n=13"
+                            alt="" class="contancs-wrapper--image">
+                        <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5?ysclid=mnvy0wz046389922050">Ivanov_example.com</a>
+                    </div>
+                    <input type="text" class="contants-wrapper--input" placeholder="Имя">
+                </div>
+                <hr class="line">
+                <div class="contacts-wrapper">
+                    <div class="contacts-wrapper--content">
+                        <img src="https://avatars.mds.yandex.net/i?id=0f96a3d0949245d5a35c9362356a9536db45ae10-2427501-images-thumbs&n=13"
+                            alt="" class="contancs-wrapper--image">
+                        <a href="https://github.com/?ysclid=mnvxzyxggv929015771">github-alex_Ivanov</a>
+                    </div>
+                    <input type="text" class="contants-wrapper--input" placeholder="Email">
+
+                </div>
+                <hr class="line">
+                <div class="contacts-wrapper">
+                    <div class="contacts-wrapper--content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1280px-Telegram_2019_Logo.svg.png"
+                            alt="" class="contancs-wrapper--image">
+                        <a href="https://web.telegram.org/k/">@Alex_Ivanov</a>
+
+                    </div>
+                    <div class="contacts-submit">
+                        <textarea class="contants-wrapper--input message"></textarea>
+                        <button class="contacts-btn">Отправить</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
