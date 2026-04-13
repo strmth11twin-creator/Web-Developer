@@ -17,7 +17,7 @@
 
 <body>
     <main>
-        <section class="hero">
+        <section class="hero hidden">
             <div class="container">
                 <div class="wrapper">
                     <h1 class="hero-title">Алексей Иванов</h1>
@@ -30,11 +30,11 @@
                     <p class="content">
                         Привет! Я обучаю ИТ и создаю веб-приложения Добро пожаловать на мое портфолио
                     </p>
-                  <a href="#projects" class="btn" data-btn>Смотреть Проекты</a>
+                    <a href="#projects" class="btn" data-btn>Смотреть Проекты</a>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about hidden">
             <div class="container">
                 <div class="wrapper-about">
                     <h2 class="about-title">Обо Мне</h2>
@@ -55,9 +55,9 @@
         </section>
         <section class="projects" id="projects">
             <div class="container">
-                <h2 class="projects-title">Мои Проекты</h2>
+                <h2 class="projects-title hidden">Мои Проекты</h2>
                 <div class="projects-container">
-                    <div class="projects-card">
+                    <div class="projects-card hidden">
                         <img src="https://avatars.mds.yandex.net/i?id=1d3424a5502c24890340071905eeffa44681e0ce-5232503-images-thumbs&n=13"
                             alt="testring platform" class="projects-card--image">
                         <div class="projects-card--wrapper">
@@ -74,7 +74,7 @@
                                     target="_blank">GitHub</a></button>
                         </div>
                     </div>
-                    <div class="projects-card">
+                    <div class="projects-card hidden">
                         <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/b7/2a/34b72a2a-c92d-5455-a7a8-f3f17048a0c1/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/1200x600wa.png"
                             alt="todo-tracker" class="projects-card--image">
                         <div class="projects-card--wrapper">
@@ -92,7 +92,7 @@
                                     target="_blank">Demo</a></button>
                         </div>
                     </div>
-                    <div class="projects-card">
+                    <div class="projects-card hidden">
                         <img src="https://a.d-cd.net/vsli70UjZeSLiC4nsgOEHCLSnRo-960.jpg" alt="testring platform"
                             class="projects-card--image">
                         <div class="projects-card--wrapper">
@@ -111,11 +111,12 @@
                         </div>
                     </div>
 
+                    <button class="modal-btn hidden">Поподробнее о проектах</button>
                 </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="container">
             <div class="contacts-container">
                 <h2 class="contacts-title">Контакты</h2>
@@ -123,7 +124,8 @@
                     <div class="contacts-wrapper--content">
                         <img src="https://avatars.mds.yandex.net/i?id=3479bab667b1d0e802e16566718d35a502875c46-5221733-images-thumbs&n=13"
                             alt="" class="contancs-wrapper--image">
-                        <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5?ysclid=mnvy0wz046389922050">Ivanov_example.com</a>
+                        <a
+                            href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5?ysclid=mnvy0wz046389922050">Ivanov_example.com</a>
                     </div>
                     <input type="text" class="contants-wrapper--input" placeholder="Имя">
                 </div>
@@ -149,13 +151,34 @@
                         <textarea class="contants-wrapper--input message"></textarea>
                         <button class="contacts-btn">Отправить</button>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal-content--wrapper">
+            <button class="close">&times;</button>
+            <div class="modal-content">
+                <div class="modal-content--card">
+                    <h3 class="modal-title">Платформа тестирования</h3>
+                    <p class="modal-text">Онлайн-платформа для прохождения тестов и проверки знаний. Система позволяет создавать и проходить тесты, а также
+                    автоматически оценивать результаты. Проект ориентирован на образовательные цели и упрощение процесса контроля знаний.</p>
+                </div>
+                <div class="modal-content--card">
+                    <h3 class="modal-title">Todo-tracker</h3>
+                    <p class="modal-text">Геймифицированное приложение для управления задачами. Пользователь может добавлять, отслеживать и завершать задачи,
+                    получая удобную визуализацию прогресса. Проект помогает повысить продуктивность и организовать повседневные дела.</p>
+                </div>
+                <div class="modal-content--card">
+                    <h3 class="modal-title">Telegram-боты</h3>
+                    <p class="modal-text">Система автоматизированных Telegram-ботов для выполнения различных задач. Боты помогают автоматизировать рутинные
+                    процессы, обрабатывать команды пользователей и упрощать взаимодействие с сервисами через мессенджер.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

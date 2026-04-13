@@ -92,3 +92,78 @@
          max-width: 380px;
      }
 }
+
+.modal-btn {
+    margin: 20px auto 0;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        max-width: 300px;
+        border: none;
+        height: 50px;
+        color: #fff;
+        background-color: #223f61;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    display: flex;
+    gap: 100px;
+}
+
+.modal-content--wrapper {
+    position: relative;
+}
+
+.modal-content--card {
+    max-width: 200px;
+    width: 100%;
+    padding: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.modal-title {
+    font-size: 22px;
+    color: #fff;
+}
+
+.modal-text {
+    color: #fff;
+    font-size: 16px;
+}
+
+.close {
+    background-color: #361111;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    position: absolute;
+    top: -100px;
+    left: 1000px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close:hover {
+    outline: 1px solid #fff;
+}
