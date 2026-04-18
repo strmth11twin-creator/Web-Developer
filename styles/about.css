@@ -35,6 +35,17 @@ h2 {
     color: #fff;
     font-size: 30px;
     cursor: pointer;
+    user-select: none;
+}
+
+.skill:hover {
+    color: #171e7e;
+    scale: 1.1;
+    transition: scale .2s ease-in-out;
+}
+
+.skill:active {
+    scale: .9;
 }
 
 .css {

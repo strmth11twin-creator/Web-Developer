@@ -7,9 +7,9 @@
     padding: 0 10px;
     height: 700px;
     object-fit: cover;
-        display: flex;
-            align-items: center;
-            justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrapper {
@@ -56,4 +56,15 @@
     height: 50px;
     color: #fff;
     background-color: #223f61;
+    transition: scale .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #2b67ac;
+    scale: 1.1;
+
+}
+
+.btn:active {
+    scale: 0.9;
 }

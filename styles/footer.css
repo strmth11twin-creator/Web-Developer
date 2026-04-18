@@ -1,6 +1,6 @@
 .footer {
     max-width: 1200px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 .contacts-container {
@@ -34,7 +34,13 @@
 .contants-wrapper--input {
     max-width: 300px;
     width: 100%;
-    padding:10px;
+    padding: 10px;
+    transition: box-shadow .2s ease-in-out, color .2s ease-in-out;
+}
+
+.contants-wrapper--input:focus-visible {
+    color: #406bac;
+    box-shadow: 2px 2px 15px #39669b, inset 2px 2px 15px #3a5d91;
 }
 
 .message {
@@ -57,10 +63,17 @@
     height: 40px;
     width: 200px;
     cursor: pointer;
+    transition: scale .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.contacts-btn:hover {
+    background-color: #2b67ac;
+    scale: 1.1;
+
 }
 
 @media (max-width: 768px) {
-.contants-wrapper--input {
+    .contants-wrapper--input {
         max-width: 200px;
         width: 100%;
         padding: 10px;
@@ -69,13 +82,15 @@
 
 @media (max-width: 480px) {
     .contants-wrapper--input {
-            height: 39px;
-        }
-                .message {
-                    height: 60px;
-                }
-.contacts-wrapper--content {
-    align-items: center;
+        height: 39px;
+    }
+
+    .message {
+        height: 60px;
+    }
+
+    .contacts-wrapper--content {
+        align-items: center;
         flex-direction: column;
     }
 }
