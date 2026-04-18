@@ -25,6 +25,10 @@
     gap: 10px;
 }
 
+.links:hover {
+    color: #18755e;
+}
+
 .contancs-wrapper--image {
     width: 33px;
     height: 33px;
@@ -35,7 +39,7 @@
     max-width: 300px;
     width: 100%;
     padding: 10px;
-    transition: box-shadow .2s ease-in-out, color .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out, color .2s #3a5d91;
 }
 
 .contants-wrapper--input:focus-visible {
@@ -69,7 +73,6 @@
 .contacts-btn:hover {
     background-color: #2b67ac;
     scale: 1.1;
-
 }
 
 @media (max-width: 768px) {

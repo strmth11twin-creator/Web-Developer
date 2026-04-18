@@ -28,10 +28,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #18755e;
-}
-
 .line {
     border: none;
     width: 100%;
